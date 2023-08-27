@@ -161,7 +161,7 @@ def add_song():
 
     # Collect notes and custom durations
     while True:
-        entry = input("Enter a note and optional custom duration (e.g., 'C#4 1/3'), or 'stop' to finish: ")
+        entry = input("Enter a note and optional custom duration (e.g., 'C#4' or 'A5 1/3'), or 'stop' to finish: ")
         
         if entry.lower() == 'stop':
             break
