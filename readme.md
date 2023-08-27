@@ -17,33 +17,33 @@ A Python script to play musical notes and simple songs using the SoundDevice lib
 
 You can install the required packages using pip:
 
-```bash
+```
 pip install numpy sounddevice
 ```
 
-# How to Use
+## How to Use
 
-## Playing a Random Song
+### Playing a Random Song
 
-Simply execute the script:
+Execute the script:
 
-```bash
+```
 python play_songs_with_sounddevice.py
 ```
 
-## Playing a Specific Song
+### Playing a Specific Song
 
 To play a specific song stored as a JSON file under the songs directory:
 
-```bash
+```
 python play_songs_with_sounddevice.py sweet_child
 ```
 
-## Adding a New Song
+### Adding a New Song
 
 To add a new song:
 
-```bash
+```
 python play_songs_with_sounddevice.py add
 ```
 
@@ -64,9 +64,19 @@ Songs are stored as JSON files with the following structure:
 }
 ```
 
+## Project Structure
+
+- `songs/`: Directory containing song JSON files
+- `play_songs_with_sounddevice.py`: Main Python script
+
 ## Contributing
 
 Feel free to fork the repository and submit pull requests.
 
-MIT License
-    
+## Troubleshooting
+
+> Add common issues and their solutions here.
+
+## License
+
+This project is licensed under the MIT License.
