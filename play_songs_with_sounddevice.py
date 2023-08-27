@@ -137,7 +137,7 @@ def play_song(song_name):
     sd.play(final_waveform, samplerate=sampling_rate)
     sd.wait()
 
-# Define a function to play a random song
+# Play a random song
 def play_random_song():
     song_files = [f for f in os.listdir('songs') if os.path.isfile(os.path.join('songs', f)) and f.endswith('.json')]
     if not song_files:
@@ -148,6 +148,7 @@ def play_random_song():
     song_name = os.path.splitext(song_file)[0]
     play_song(song_name)
 
+# Add a new song
 def add_song():
     # Ask for song name
     song_name = input("Enter the name of the song: ")
