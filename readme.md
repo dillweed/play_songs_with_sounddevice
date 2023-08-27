@@ -56,10 +56,12 @@ Songs are stored as JSON files with the following structure:
 ```json
 {
     "notes": [
-        ["C3", "1/4"],
-        ["D3", "1/4"],
-        ["F3", "1/4"],
-        ["D3", "1/4"]
+        ["A2", null],
+        ["A2", null],
+        ["A2", null],
+        ["F1", "2/3"],
+        ["C2", "1/3"],
+        ["A2", null]
     ],
     "default_duration": 500
 }
