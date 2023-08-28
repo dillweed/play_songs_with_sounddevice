@@ -4,7 +4,7 @@ A Python script to play musical notes and simple songs using the SoundDevice lib
 
 ## Features
 
-- Play individual notes with specified or default durations.
+- Play individual notes with custom duration.
 - Play songs from JSON files.
 - Play random songs from a list.
 - Add new songs via user input.
@@ -47,23 +47,24 @@ To add a new song:
 python play_songs_with_sounddevice.py add
 ```
 
-Follow the prompts to enter the song name, default note duration, and individual notes with optional custom durations.
+Follow the prompts to enter the song name, beats per minute, and individual notes with optional custom durations.
 
 ## JSON Song File Structure
 
-Songs are stored as JSON files with the following structure:
+Songs are stored as JSON files. The `notes` array contains sequential notes from A1 through A6 with the following structure:
+
+- `note`: The note name (e.g. `A1`, `D#4`, `Eb5`, `C#2`). Note that an Ab is noted with the octave preceding the A immediately above. For example, Ab5 is just before A6.
+- `duration`: The multiplier of the beat length expressed either as a fraction or decimal. A null value will use the default duration calculated from the BPM. 
 
 ```json
 {
     "notes": [
-        ["A2", null],
-        ["A2", null],
-        ["A2", null],
-        ["F1", "2/3"],
-        ["C2", "1/3"],
-        ["A2", null]
+        ["A1", null],
+        ["D#4", 2],
+        ["Eb5", "1/3"],
+        ["A6", 0.25]
     ],
-    "default_duration": 500
+    "bpm": 120
 }
 ```
 
