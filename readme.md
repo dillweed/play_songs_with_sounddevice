@@ -53,7 +53,7 @@ Follow the prompts to enter the song name, beats per minute, and individual note
 
 Songs are stored as JSON files. The `notes` array contains sequential notes from A1 through A6 with the following structure:
 
-- `note`: The note name (e.g. `A1`, `D#4`, `Eb5`, `C#2`). Note that an Ab is noted with the octave preceding the A immediately above. For example, Ab5 is just before A6.
+- `note`: The note name (e.g. `A1`, `D#4`, `Eb5`, `C#2`). Note that an 'Ab' (A-flat) is noted with the octave preceding the A immediately above. For example, `Ab5` is just before `A6`.
 - `duration`: The multiplier of the beat length expressed either as a fraction or decimal. A null value will use the default duration calculated from the BPM. 
 
 ```json
@@ -80,6 +80,8 @@ Feel free to fork the repository and submit pull requests.
 ## Troubleshooting
 
 > Add common issues and their solutions here.
+
+- TODO: Remap scale to match [standard octave numbering](https://www.vibrationdata.com/tutorials2/piano.pdf). 
 
 ## License
 
