@@ -1,6 +1,6 @@
 # Python Melody Player with SoundDevice
 
-A Python script to record and play synthezied monophonic songs using the SoundDevice library.
+A Python script to record and play synthezied monophonic songs using the SoundDevice library. It's a fun way to add audible alerts to a script. (Like a washing machine jingle)
 
 ## Features
 
@@ -82,6 +82,7 @@ Feel free to fork the repository and submit pull requests.
 > Add common issues and their solutions here.
 
 - TODO: Remap scale to match [standard octave numbering](https://www.vibrationdata.com/tutorials2/piano.pdf). 
+- TODO: Transcribe the Frigidaire jingles. 
 
 ## License
 
