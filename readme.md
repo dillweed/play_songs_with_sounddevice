@@ -1,6 +1,6 @@
-# Python MIDI Player with SoundDevice
+# Python Melody Player with SoundDevice
 
-A Python script to play musical notes and simple songs using the SoundDevice library.
+A Python script to record and play synthezied monophonic songs using the SoundDevice library.
 
 ## Features
 
